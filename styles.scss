@@ -1,0 +1,39 @@
+@use 'colors' as c;
+@use 'button' as btn;
+@use 'header';
+@use 'nav';
+@use 'teacherNav';
+@use 'teacherInfo';
+@use 'statistic';
+@use 'favorites';
+@use 'footer';
+@use 'pop-up';
+* {
+    font-family: roboto, arial, helvetica, sans-serif;
+    background-color: white;
+}
+
+body {
+    margin: 0;
+    background-color: c.$body-bg;
+}
+
+.frame {
+    padding: 0 1rem;
+}
+
+hr {
+    margin: 40px 0;
+    border-top: 1px solid black;
+}
+
+@media (min-width: 800px) {
+    .frame {
+        margin: 0 calc(14% - (14vmax - 14%));
+        padding: 0 5%;
+    }
+    hr {
+        margin-right: 12%;
+        margin-left: 12%;
+    }
+}

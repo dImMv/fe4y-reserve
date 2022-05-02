@@ -1,0 +1,49 @@
+@use 'colors' as c;
+@use 'layouts' as l;
+#statistics {
+    margin-bottom: 5rem;
+    & h2 {
+        margin-bottom: 54px;
+    }
+    table {
+        & thead {
+            border-bottom: 1px solid c.$main-dark;
+            & th:hover {
+                background-color: lightgrey;
+                border-bottom: 2px solid c.$main-dark;
+            }
+        }
+        border-collapse: collapse;
+        width: 100%;
+        & tr:nth-child(even) {
+            background-color: c.$table-text;
+        }
+        & th,
+        td {
+            padding: 10px;
+            font-size: 1rem;
+            font-weight: 300;
+        }
+    }
+    & tbody {
+        & td {
+            font-size: 14px;
+            font-weight: 300;
+        }
+    }
+    & .table-nav {
+        & a {
+            text-decoration: none;
+            color: c.$table-link;
+            font-size: 14px;
+            font-weight: 400;
+        }
+        & a:first-child,
+        a:nth-last-child(2) {
+            color: c.$main-dark;
+        }
+        margin: 2rem;
+        @include l.flex(space-between, center);
+        width: 150px;
+    }
+}

@@ -1,0 +1,53 @@
+@use 'layouts' as l;
+@use 'colors' as c;
+nav {
+    margin-bottom: 40px;
+    & a {
+        display: block;
+        color: c.$accent;
+        font-weight: 700;
+        text-decoration: none;
+        margin: 0.5rem 0;
+        font-size: 1rem;
+        &:hover {
+            color: c.$accent-hover;
+        }
+    }
+    & button {
+        width: 170px;
+        height: 52px;
+        font-size: 1rem;
+        &:hover {
+            background-color: c.$accent;
+            color: c.$main-light;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    nav {
+        @include l.flex(space-between, center);
+        margin-bottom: 40px;
+        & .nav-link {
+            display: block;
+        }
+        & a {
+            display: inline;
+            margin: 0 2.5rem 0 0;
+        }
+        & button {
+            margin: 0 0;
+            width: 170px;
+            height: 52px;
+            font-weight: 500;
+            font-size: 16px;
+            border: 1px solid c.$accent;
+            color: c.$accent;
+            background-color: white;
+            &:hover {
+                background-color: c.$accent;
+                color: white;
+            }
+        }
+    }
+}

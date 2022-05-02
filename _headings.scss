@@ -1,0 +1,26 @@
+@use 'colors' as c;
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: c.$main-light;
+    font-weight: 900;
+    text-shadow: 1px 1px 1px c.$main-dark, -1px -1px 1px c.$accent;
+    &:hover {
+        color: c.$h1-special;
+    }
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 2.65rem 0;
+}
+
+h3 {
+    font-weight: normal;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}

@@ -1,0 +1,73 @@
+@use 'layouts' as l;
+@use 'colors' as c;
+.teachers {
+    @include l.flex(flex-start, center);
+    flex-wrap: wrap;
+    & div.teacher {
+        margin: 2rem 1rem;
+        text-align: center;
+    }
+    & .name {
+        margin-bottom: 0.25rem;
+        margin-top: 1.5rem;
+    }
+    & .last-name {
+        margin-bottom: 12px;
+    }
+    & .discipline {
+        color: c.$common;
+        font-size: 12px;
+        font-weight: 500;
+        margin-bottom: 12px;
+    }
+    & .country {
+        font-size: 10px;
+    }
+    & .star-img {
+        position: relative;
+    }
+    & i {
+        position: absolute;
+        display: block;
+        top: 1%;
+        right: 0;
+        font-size: 2.5rem;
+        color: c.$star;
+        background-color: transparent;
+    }
+}
+
+img,
+.initials {
+    width: 146px;
+    height: 146px;
+}
+
+img:hover {
+    transform: scale(1.2);
+}
+
+.img-wrapper {
+    display: inline-block;
+    overflow: hidden;
+    border: 3px solid salmon;
+    // 15%
+    width: 146px;
+    height: 146px;
+    border-radius: 50%;
+    &:hover {
+        border-color: red;
+    }
+}
+
+.initials {
+    margin-top: 0;
+    text-align: center;
+    line-height: 146px;
+    color: salmon;
+    font-weight: 700;
+    font-size: 20px;
+    &:hover {
+        color: red;
+    }
+}

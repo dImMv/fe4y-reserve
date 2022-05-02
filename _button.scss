@@ -1,0 +1,11 @@
+@use 'colors' as c;
+button {
+    font-weight: 500;
+    color: c.$accent;
+    background-color: white;
+    border: solid 1px c.$accent;
+    &:hover {
+        background-color: c.$accent;
+        color: white;
+    }
+}

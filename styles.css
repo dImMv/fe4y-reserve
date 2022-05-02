@@ -1,0 +1,623 @@
+button {
+  font-weight: 500;
+  color: #f8705f;
+  background-color: white;
+  border: solid 1px #f8705f;
+}
+button:hover {
+  background-color: #f8705f;
+  color: white;
+}
+
+h1 {
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  font-weight: 900;
+  text-shadow: 1px 1px 1px black, -1px -1px 1px #f8705f;
+}
+h1:hover {
+  color: lightgray;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 2.65rem 0;
+}
+
+h3 {
+  font-weight: normal;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+header input {
+  height: 2.5rem;
+  margin-bottom: 1rem;
+  padding: 0 1rem;
+  margin-right: 0.25em;
+  color: #767676;
+}
+header button {
+  text-align: left;
+  padding: 0 1rem;
+  height: 2.75rem;
+}
+
+@media (min-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    margin-bottom: 2.5rem;
+    padding-top: 2rem;
+  }
+  header form input {
+    width: 13.75rem;
+    margin-right: 2em;
+    padding-left: 0.625rem;
+    margin-bottom: 0;
+  }
+  header form button {
+    text-align: center;
+    width: 5.75rem;
+    display: inline-block;
+  }
+}
+nav {
+  margin-bottom: 40px;
+}
+nav a {
+  display: block;
+  color: #f8705f;
+  font-weight: 700;
+  text-decoration: none;
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+nav a:hover {
+  color: red;
+}
+nav button {
+  width: 170px;
+  height: 52px;
+  font-size: 1rem;
+}
+nav button:hover {
+  background-color: #f8705f;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  nav .nav-link {
+    display: block;
+  }
+  nav a {
+    display: inline;
+    margin: 0 2.5rem 0 0;
+  }
+  nav button {
+    margin: 0 0;
+    width: 170px;
+    height: 52px;
+    font-weight: 500;
+    font-size: 16px;
+    border: 1px solid #f8705f;
+    color: #f8705f;
+    background-color: white;
+  }
+  nav button:hover {
+    background-color: #f8705f;
+    color: white;
+  }
+}
+#teachers {
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+}
+#teachers h2 {
+  margin: 0 0 40px 0;
+}
+#teachers form div {
+  margin-bottom: 60px;
+  padding: 0 20px;
+  height: 30px;
+  display: inline-block;
+}
+#teachers form div select {
+  background-color: white;
+  width: 68px;
+}
+#teachers form select {
+  height: 36px;
+}
+#teachers form label {
+  font-weight: 400;
+  color: #767676;
+  font-size: 14px;
+  margin-right: 16px;
+}
+
+@media (min-width: 1024px) {
+  #teachers form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #teachers form div {
+    border-right: 1px dotted #767676;
+    display: flex;
+    justify-content: default;
+    align-items: center;
+  }
+}
+.teachers {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.teachers div.teacher {
+  margin: 2rem 1rem;
+  text-align: center;
+}
+.teachers .name {
+  margin-bottom: 0.25rem;
+  margin-top: 1.5rem;
+}
+.teachers .last-name {
+  margin-bottom: 12px;
+}
+.teachers .discipline {
+  color: #767676;
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+.teachers .country {
+  font-size: 10px;
+}
+.teachers .star-img {
+  position: relative;
+}
+.teachers i {
+  position: absolute;
+  display: block;
+  top: 1%;
+  right: 0;
+  font-size: 2.5rem;
+  color: #ecec02;
+  background-color: transparent;
+}
+
+img,
+.initials {
+  width: 146px;
+  height: 146px;
+}
+
+img:hover {
+  transform: scale(1.2);
+}
+
+.img-wrapper {
+  display: inline-block;
+  overflow: hidden;
+  border: 3px solid salmon;
+  width: 146px;
+  height: 146px;
+  border-radius: 50%;
+}
+.img-wrapper:hover {
+  border-color: red;
+}
+
+.initials {
+  margin-top: 0;
+  text-align: center;
+  line-height: 146px;
+  color: salmon;
+  font-weight: 700;
+  font-size: 20px;
+}
+.initials:hover {
+  color: red;
+}
+
+#statistics {
+  margin-bottom: 5rem;
+}
+#statistics h2 {
+  margin-bottom: 54px;
+}
+#statistics table {
+  border-collapse: collapse;
+  width: 100%;
+}
+#statistics table thead {
+  border-bottom: 1px solid black;
+}
+#statistics table thead th:hover {
+  background-color: lightgrey;
+  border-bottom: 2px solid black;
+}
+#statistics table tr:nth-child(even) {
+  background-color: #f9f5f9;
+}
+#statistics table th,
+#statistics table td {
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 300;
+}
+#statistics tbody td {
+  font-size: 14px;
+  font-weight: 300;
+}
+#statistics .table-nav {
+  margin: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 150px;
+}
+#statistics .table-nav a {
+  text-decoration: none;
+  color: #1a9cb0;
+  font-size: 14px;
+  font-weight: 400;
+}
+#statistics .table-nav a:first-child,
+#statistics .table-nav a:nth-last-child(2) {
+  color: black;
+}
+
+#favorites .fav-box {
+  display: grid;
+  grid-template-columns: 60px auto 60px;
+  justify-content: space-between;
+  align-items: center;
+}
+#favorites .fav-box .back-arrow {
+  position: relative;
+}
+#favorites .back-arrow {
+  justify-self: start;
+  width: 0;
+  height: 0;
+  border-top: 40px solid transparent;
+  border-bottom: 40px solid transparent;
+  border-right: 30px solid grey;
+  position: relative;
+}
+#favorites .back-arrow:hover {
+  border-right: 30px solid black;
+}
+#favorites .design-element-back {
+  position: absolute;
+  top: -30px;
+  left: 10px;
+  background-color: transparent;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-right: 20px solid white;
+}
+#favorites .design-element-next {
+  position: absolute;
+  top: -30px;
+  right: 10px;
+  background-color: transparent;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-left: 20px solid white;
+}
+#favorites .next-arrow {
+  justify-self: end;
+  width: 0;
+  height: 0;
+  border-top: 40px solid transparent;
+  border-bottom: 40px solid transparent;
+  border-left: 30px solid grey;
+  position: relative;
+}
+#favorites .next-arrow:hover {
+  border-left: 30px solid black;
+}
+
+@media (min-width: 804px) {
+  #favorites .fav-box {
+    margin: 0 -8% 0;
+    display: grid;
+    grid-template-columns: 60px auto 60px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #favorites .fav-box .back-arrow {
+    position: relative;
+  }
+  #favorites .back-arrow {
+    justify-self: start;
+    width: 0;
+    height: 0;
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    border-right: 30px solid grey;
+    position: relative;
+  }
+  #favorites .back-arrow:hover {
+    border-right: 30px solid black;
+  }
+  #favorites .design-element-back {
+    position: absolute;
+    top: -30px;
+    left: 10px;
+    background-color: transparent;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-right: 20px solid white;
+  }
+  #favorites .design-element-next {
+    position: absolute;
+    top: -30px;
+    right: 10px;
+    background-color: transparent;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 20px solid white;
+  }
+  #favorites .next-arrow {
+    justify-self: end;
+    width: 0;
+    height: 0;
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    border-left: 30px solid grey;
+    position: relative;
+  }
+  #favorites .next-arrow:hover {
+    border-left: 30px solid black;
+  }
+}
+footer p {
+  text-align: justify;
+  font-weight: 300;
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+}
+
+.popup,
+.add-teacher {
+  background-color: white;
+  box-shadow: 2px 2px 10px;
+  border-radius: 4px;
+  position: relative;
+}
+.popup .title,
+.add-teacher .title {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px 0 20px 20px;
+  background-color: #464547;
+  color: white;
+  text-align: start;
+  font-size: 24px;
+}
+.popup .cancel,
+.add-teacher .cancel {
+  background-color: transparent;
+  float: right;
+  text-align: center;
+  margin: 22px 10px 22px;
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.add-teacher {
+  width: 616px;
+}
+.add-teacher .grid-add-teacher {
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-areas: "a a" "b b" "c d" "e f" "g ." "i ." "j ." "k k" "l l";
+  grid-template-columns: 1fr 1fr;
+  justify-content: start;
+  row-gap: 24px;
+  column-gap: 50px;
+}
+.add-teacher .grid-add-teacher div {
+  position: relative;
+  margin: 0 30px;
+}
+.add-teacher .grid-add-teacher label,
+.add-teacher .grid-add-teacher option {
+  color: #767676;
+  font-weight: 300;
+  font-size: 0.95rem;
+  display: block;
+  margin: 0 0 8px;
+  text-align: left;
+}
+.add-teacher .grid-add-teacher input,
+.add-teacher .grid-add-teacher select,
+.add-teacher .grid-add-teacher textarea {
+  width: 224px;
+  height: 32px;
+}
+.add-teacher .grid-add-teacher .add-name {
+  grid-area: a;
+}
+.add-teacher .grid-add-teacher .add-name input {
+  width: 100%;
+}
+.add-teacher .grid-add-teacher .add-specialty {
+  grid-area: b;
+}
+.add-teacher .grid-add-teacher .add-specialty select {
+  width: 100%;
+}
+.add-teacher .grid-add-teacher .add-country {
+  grid-area: c;
+}
+.add-teacher .grid-add-teacher .add-city {
+  grid-area: d;
+}
+.add-teacher .grid-add-teacher .add-email {
+  grid-area: e;
+}
+.add-teacher .grid-add-teacher .add-phone {
+  grid-area: f;
+}
+.add-teacher .grid-add-teacher .add-birth {
+  grid-area: g;
+}
+.add-teacher .grid-add-teacher .add-sex {
+  grid-area: i;
+  display: flex;
+  justify-content: space-between;
+  text-align: end;
+}
+.add-teacher .grid-add-teacher .add-sex input {
+  width: auto;
+  text-align: center;
+}
+.add-teacher .grid-add-teacher .add-sex label {
+  display: inline-block;
+  text-align: end;
+}
+.add-teacher .grid-add-teacher .add-bg-color {
+  grid-area: j;
+  display: flex;
+  justify-content: space-between;
+}
+.add-teacher .grid-add-teacher .add-bg-color label {
+  display: inline-block;
+  justify-self: end;
+  align-self: end;
+}
+.add-teacher .grid-add-teacher .add-bg-color input {
+  float: right;
+  width: 50px;
+}
+.add-teacher .grid-add-teacher .add-note {
+  grid-area: k;
+}
+.add-teacher .grid-add-teacher .add-note textarea {
+  width: 100%;
+  height: auto;
+}
+.add-teacher .grid-add-teacher .submit {
+  grid-area: l;
+  margin-bottom: 1rem;
+}
+.add-teacher .grid-add-teacher .submit input {
+  width: 100%;
+  height: 60px;
+  font-weight: 6800;
+  font-size: 32px;
+  border: 1px solid #f8705f;
+  color: #f8705f;
+  background-color: white;
+}
+.add-teacher .grid-add-teacher .submit input:hover {
+  background-color: #f8705f;
+  color: white;
+}
+
+.info-teacher {
+  width: auto;
+}
+.info-teacher .info-body {
+  margin-left: 320px;
+  margin-bottom: 140px;
+  padding-left: 1rem;
+  display: grid;
+  grid-template-rows: repeat(4, 40px);
+  align-items: left;
+  justify-content: left;
+  text-align: left;
+}
+.info-teacher .info-body .name {
+  text-align: start;
+  font-size: 24px;
+}
+.info-teacher .info-body .description-specialty {
+  font-weight: 600;
+}
+.info-teacher .info-body .description-living,
+.info-teacher .info-body .description-personal,
+.info-teacher .info-body .description-email,
+.info-teacher .info-body .description-phone {
+  font-weight: 300;
+  font-size: 14px;
+}
+.info-teacher .info-body .description-email {
+  margin-bottom: 20px;
+  color: blue;
+}
+.info-teacher .img-info {
+  float: left;
+  padding-left: 16px;
+  width: 320px;
+  height: 320px;
+}
+.info-teacher .img-info:hover {
+  transform: none;
+}
+.info-teacher .long-info {
+  margin: 16px;
+  text-align: justify;
+}
+.info-teacher .map {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  text-align: left;
+  margin-left: 1rem;
+  color: blue;
+}
+
+* {
+  font-family: roboto, arial, helvetica, sans-serif;
+  background-color: white;
+}
+
+body {
+  margin: 0;
+  background-color: #fcfcfc;
+}
+
+.frame {
+  padding: 0 1rem;
+}
+
+hr {
+  margin: 40px 0;
+  border-top: 1px solid black;
+}
+
+@media (min-width: 800px) {
+  .frame {
+    margin: 0 calc(14% - (14vmax - 14%));
+    padding: 0 5%;
+  }
+
+  hr {
+    margin-right: 12%;
+    margin-left: 12%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,110 @@
+#favorites {
+    & .fav-box {
+        display: grid;
+        grid-template-columns: 60px auto 60px;
+        & .back-arrow {
+            position: relative;
+        }
+        justify-content: space-between;
+        align-items: center;
+    }
+    .back-arrow {
+        justify-self: start;
+        width: 0;
+        height: 0;
+        border-top: 40px solid transparent;
+        border-bottom: 40px solid transparent;
+        border-right: 30px solid grey;
+        position: relative;
+        &:hover {
+            border-right: 30px solid black;
+        }
+    }
+    .design-element-back {
+        position: absolute;
+        top: -30px;
+        left: 10px;
+        background-color: transparent;
+        border-top: 30px solid transparent;
+        border-bottom: 30px solid transparent;
+        border-right: 20px solid white;
+    }
+    .design-element-next {
+        position: absolute;
+        top: -30px;
+        right: 10px;
+        background-color: transparent;
+        border-top: 30px solid transparent;
+        border-bottom: 30px solid transparent;
+        border-left: 20px solid white;
+    }
+    .next-arrow {
+        justify-self: end;
+        width: 0;
+        height: 0;
+        border-top: 40px solid transparent;
+        border-bottom: 40px solid transparent;
+        border-left: 30px solid grey;
+        position: relative;
+        &:hover {
+            border-left: 30px solid black;
+        }
+    }
+}
+
+@media (min-width: 804px) {
+    #favorites {
+        & .fav-box {
+            margin: 0 -8% 0;
+            display: grid;
+            grid-template-columns: 60px auto 60px;
+            & .back-arrow {
+                position: relative;
+            }
+            justify-content: space-between;
+            align-items: center;
+        }
+        .back-arrow {
+            justify-self: start;
+            width: 0;
+            height: 0;
+            border-top: 40px solid transparent;
+            border-bottom: 40px solid transparent;
+            border-right: 30px solid grey;
+            position: relative;
+            &:hover {
+                border-right: 30px solid black;
+            }
+        }
+        .design-element-back {
+            position: absolute;
+            top: -30px;
+            left: 10px;
+            background-color: transparent;
+            border-top: 30px solid transparent;
+            border-bottom: 30px solid transparent;
+            border-right: 20px solid white;
+        }
+        .design-element-next {
+            position: absolute;
+            top: -30px;
+            right: 10px;
+            background-color: transparent;
+            border-top: 30px solid transparent;
+            border-bottom: 30px solid transparent;
+            border-left: 20px solid white;
+        }
+        .next-arrow {
+            justify-self: end;
+            width: 0;
+            height: 0;
+            border-top: 40px solid transparent;
+            border-bottom: 40px solid transparent;
+            border-left: 30px solid grey;
+            position: relative;
+            &:hover {
+                border-left: 30px solid black;
+            }
+        }
+    }
+}
